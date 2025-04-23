@@ -33,3 +33,20 @@ console.log("Increment:", increment);
 let decrement = 5;
 decrement--; // 4
 console.log("Decrement:", decrement);
+
+//logical operators in JavaScript
+// AND (&&)
+let a = true;
+let b = false;
+let andResult = a && b; // false
+console.log("AND:", andResult);
+//or (||)
+let orResult = a || b; // true
+console.log("OR:", orResult);
+//not (!)
+let notResult = !a; // false
+console.log("NOT:", notResult);
+//bitwise operators in JavaScript
+// Bitwise AND (&)
+let bitwiseAnd = 5 & 3; // 1 (0101 & 0011 = 0001)
+console.log("Bitwise AND:", bitwiseAnd);

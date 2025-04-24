@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age">
+    </form>
+    <script>
+        document.getElementById("age").addEventListener("change", function() {
+            var age = this.value;
+            valid(age);
+        });
+        function valid(a){
+            if(a<18){
+                alert("You are not eligible.");
+            } else {
+                alert("You are eligible.");
+            }
+        }
+    </script>
+</body>
+</html>

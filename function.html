@@ -7,6 +7,28 @@
 </head>
 <body>
     <form>
+        <label for="arrayInput">Enter numbers (comma-separated):</label>
+        <input type="text" id="arrayInput" name="arrayInput" placeholder="e.g., 1,2,3,4">
+        <button type="button" id="submitArray">Submit</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        document.getElementById("submitArray").addEventListener("click", function() {
+            var input = document.getElementById("arrayInput").value;
+            var array = input.split(',').map(Number);
+            document.getElementById("output").textContent = "Array: " + array.join(", ");
+        });
+    </script>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name">
         <br><br>

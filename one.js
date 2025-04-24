@@ -25,3 +25,8 @@ console.log(num1+num2); // 99
 //array data type
 var arr=[1,2,3,4,5];
 console.log(arr); // 1
+let mystring="Manoj is good boy Dalavoy D"
+//string methods
+console.log(mystring.length); // 16
+console.log(mystring.indexOf("good boy")); // 12
+console.log(mystring.slice(0,5)); // Manoj
